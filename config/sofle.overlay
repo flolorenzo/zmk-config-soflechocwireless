@@ -30,13 +30,14 @@
 /* SK6812 LEDs */
 &spi1 {
     status = "okay";
-    led_strip: sk6812@0 {
+    ws2812: ws2812@0 {
         compatible = "worldsemi,ws2812-spi";
         reg = <0>;
-        label = "BACKLIGHT";
+        label = "WS2812";
         spi-max-frequency = <4000000>;
-        chain-length = <30>;  /* Anzahl LEDs pro Hälfte */
+        chain-length = <30>; /* Anzahl deiner LEDs */
         color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
+        data-gpios = <&gpio0 8 GPIO_ACTIVE_HIGH>;
         status = "okay";
     };
 };
