@@ -2,13 +2,14 @@
 &i2c1 {
     status = "okay";
 
+    /* Linkes OLED auf rechter Seite deaktiviert */
     oled_left: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
         reg = <0x3c>;
         label = "OLED_LEFT";
         width = <128>;
         height = <32>;
-        status = "okay";
+        status = "disabled";
     };
 
     oled_right: ssd1306@3d {
