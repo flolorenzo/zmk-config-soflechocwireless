@@ -1,6 +1,8 @@
 /* I²C für OLEDs */
 &i2c1 {
     status = "okay";
+    pinctrl-0 = <&i2c1_default>;
+    pinctrl-names = "default";
 
     /* Linkes OLED auf rechter Seite deaktiviert */
     oled_left: ssd1306@3c {
