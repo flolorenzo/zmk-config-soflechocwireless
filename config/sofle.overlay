@@ -1,0 +1,42 @@
+/ {
+    chosen {
+        zmk,keyboard = &keymap;
+    };
+};
+
+/* I²C für OLEDs */
+&i2c1 {
+    status = "okay";
+
+    oled_left: ssd1306@3c {
+        compatible = "solomon,ssd1306fb";
+        reg = <0x3c>;
+        label = "OLED_LEFT";
+        width = <128>;
+        height = <32>;
+        status = "okay";
+    };
+
+    oled_right: ssd1306@3d {
+        compatible = "solomon,ssd1306fb";
+        reg = <0x3d>;
+        label = "OLED_RIGHT";
+        width = <128>;
+        height = <32>;
+        status = "okay";
+    };
+};
+
+/* SK6812 LEDs */
+&spi1 {
+    status = "okay";
+    led_strip: sk6812@0 {
+        compatible = "worldsemi,ws2812-spi";
+        reg = <0>;
+        label = "BACKLIGHT";
+        spi-max-frequency = <4000000>;
+        chain-length = <30>;  /* Anzahl LEDs pro Hälfte */
+        color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
+        status = "okay";
+    };
+};
