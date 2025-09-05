@@ -17,13 +17,13 @@
         };
     };
 
-    oled_left: oled_left {
+    oled_left: oled_display_left {
         compatible = "zmk,oled";
         device = <&oled_left>;
         widgets = <&layer_status 0 0>;
     };
 
-    oled_right: oled_right {
+    oled_right: oled_display_right {
         compatible = "zmk,oled";
         device = <&oled_right>;
         widgets = <&layer_status 0 0>;
