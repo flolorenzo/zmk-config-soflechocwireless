@@ -24,10 +24,10 @@
     oled_right: ssd1306@3d {
         compatible = "solomon,ssd1306fb";
         reg = <0x3d>;
-        label = "OLED_RIGHT";
         width = <128>;
         height = <32>;
         segment-offset = <0>;
+        page-offset = <0>;
         status = "okay";
     };
 };
