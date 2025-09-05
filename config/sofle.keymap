@@ -11,6 +11,24 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    widgets {
+        layer_status: layer_status {
+            compatible = "zmk,widget-layer-status";
+        };
+    };
+
+    oled_left: oled_left {
+        compatible = "zmk,oled";
+        device = <&oled_left>;
+        widgets = <&layer_status 0 0>;
+    };
+
+    oled_right: oled_right {
+        compatible = "zmk,oled";
+        device = <&oled_right>;
+        widgets = <&layer_status 0 0>;
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
