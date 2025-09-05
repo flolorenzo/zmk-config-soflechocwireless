@@ -27,6 +27,7 @@
         label = "OLED_RIGHT";
         width = <128>;
         height = <32>;
+        segment-offset = <0>;
         status = "okay";
     };
 };

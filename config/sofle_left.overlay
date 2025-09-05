@@ -17,6 +17,7 @@
         label = "OLED_LEFT";
         width = <128>;
         height = <32>;
+        segment-offset = <0>;
         status = "okay";
     };
 
