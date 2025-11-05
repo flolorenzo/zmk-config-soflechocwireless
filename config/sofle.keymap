@@ -86,11 +86,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |        | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESC               &kp N1            &kp N2    &kp N3              &kp N4              &kp N5                                            &kp N6     &kp N7             &kp N8     &kp N9             &kp N0    &kp DEL
-&kp TAB               &kp Q             &kp W     &kp E               &kp R               &kp T                                             &kp Y      &longPress LBKT U  &kp I      &longPress SEMI O  &kp P     &kp BSPC
-&kp LSHIFT            &longPress SQT A  &kp S     &kp D               &kp F               &kp G                                             &kp H      &kp J              &kp K      &kp L              &kp SEMI  &kp SQT
-&kp LC(LEFT_CONTROL)  &kp Z             &kp X     &longPress LC(C) C  &longPress LC(V) V  &kp B      &kp C_PLAY_PAUSE    &ext_power EP_TOG  &kp N      &kp M              &kp COMMA  &kp DOT            &kp FSLH  &kp RCTRL
-                                        &kp LGUI  &kp LALT            &kp LC(LCTRL)       &kp SPACE  &mo 1               &mo 2              &kp ENTER  &kp RCTRL          &kp RALT   &kp RGUI
+&kp ESC                                      &kp N1              &kp N2              &kp N3              &kp N4              &kp N5                                            &kp N6              &kp N7             &kp N8     &kp N9             &kp N0       &kp DEL
+&kp TAB                                      &longPress DE_AT Q  &kp W               &kp E               &kp R               &kp T                                             &kp Y               &longPress LBKT U  &kp I      &longPress SEMI O  &kp P        &kp BSPC
+&kp LSHIFT                                   &longPress SQT A    &longPress LC(S) S  &kp D               &kp F               &kp G                                             &kp H               &kp J              &kp K      &kp L              &kp DE_PLUS  &kp DE_HASH
+&longPress LC(DE_GREATER_THAN) DE_LESS_THAN  &kp Z               &kp X               &longPress LC(C) C  &longPress LC(V) V  &kp B      &kp C_PLAY_PAUSE    &ext_power EP_TOG  &longPress LC(N) N  &kp M              &kp COMMA  &kp DOT            &kp FSLH     &kp RCTRL
+                                                                 &kp LGUI            &kp LALT            &kp LC(LCTRL)       &kp SPACE  &mo 1               &mo 2              &kp ENTER           &kp RCTRL          &kp RALT   &kp RGUI
             >;
 
             sensor-bindings =
@@ -108,11 +108,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans     &kp F1     &kp F2     &kp F3       &kp F4    &kp F5                       &kp F6     &kp F7    &kp F8           &kp F9     &kp F10   &kp F11
-&kp GRAVE  &kp N1     &kp N2     &kp N3       &kp N4    &kp N5                       &kp N6     &kp N7    &kp N8           &kp N9     &kp N0    &kp F12
-&trans     &kp EXCL   &kp AT     &kp HASH     &kp DLLR  &kp PRCNT                    &kp CARET  &kp AMPS  &kp KP_MULTIPLY  &kp LPAR   &kp RPAR  &kp PIPE
-&trans     &kp EQUAL  &kp MINUS  &kp KP_PLUS  &kp LBRC  &kp RBRC   &trans    &trans  &kp LBKT   &kp RBKT  &kp SEMI         &kp COLON  &kp BSLH  &trans
-                      &trans     &trans       &trans    &trans     &trans    &trans  &trans     &trans    &trans           &trans
+&trans     &kp F1     &kp F2     &kp F3       &longPress LA(F4) F4  &kp F5                       &kp F6     &kp F7    &kp F8           &kp F9     &kp F10   &kp F11
+&kp GRAVE  &kp N1     &kp N2     &kp N3       &kp N4                &kp N5                       &kp N6     &kp N7    &kp N8           &kp N9     &kp N0    &kp F12
+&trans     &kp EXCL   &kp AT     &kp HASH     &kp DLLR              &kp PRCNT                    &kp CARET  &kp AMPS  &kp KP_MULTIPLY  &kp LPAR   &kp RPAR  &kp PIPE
+&trans     &kp EQUAL  &kp MINUS  &kp KP_PLUS  &kp LBRC              &kp RBRC   &trans    &trans  &kp LBKT   &kp RBKT  &kp SEMI         &kp COLON  &kp BSLH  &trans
+                      &trans     &trans       &trans                &trans     &trans    &trans  &trans     &trans    &trans           &trans
             >;
 
             sensor-bindings =
